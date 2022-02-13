@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <form>
+    <div>
+        <H1><b>Страница-опросник для обладателей котиков </b></H1>
+        <p> Введите кличку котика: </p> <br />
+            Моего кота/кошку зовут: <input type="text" name="catname" /><br />
+     </div>
+        
+    <div>
+        <fieldset>
+        <legend>Имя и контакты владельца</legend>
+        <p>Имя <input type="text" name="firstName" /></p>
+        <p>Фамилия <input type="text" name="lastName" /></p>
+        </fieldset>
+        <fieldset>
+        <legend>Адрес</legend>
+        <p>Адрес <textarea name="address" rows="1" cols="50"></textarea></p>
+        <p>Индекс <input type="text" name="postcode" /></p>
+        </fieldset>
+    </div>
+
+    <div> 
+        <p>Порода питомца</p>
+    
+        <select>
+            <option value="first option">Пиксибоб</option>
+            <option value="second option">Египетская мау</option>
+            <option value="third option">Персидская</option>
+            <option value="fourth option"> Нет в списке</option>
+         </select>          
+    </div> 
+
+    <div>
+        <p> Какой корм ест ваш питомец? </p>
+        <input type="checkbox" name="space" value="1" />
+        Сухой корм<br />
+        <input type="checkbox" name="space" value="2" /> 
+        Влажный корм <br />
+        <input type="checkbox" name="space" value="3" />
+        Натуральный корм <br />
+    </div>    
+        
+    <div> 
+        <p> Укажите пол питомца: </p>
+        <input type="radio" name="sex" value="m" /> Самец<br />
+        <input type="radio" name="sex" value="f" /> Самка
+    </div>   
+
+    <div> 
+        <p>Оставьте здесь ваш комментарий:</p>
+
+        <textarea rows="7" cols="60"></textarea>
+    </div>
+
+    <div>
+    <label for="picture">Прикрепите фото питомца:</label>
+    </div>
+
+   <div>
+        <input type="file"
+         id="picture" name="picture"
+         accept="image/png, image/jpeg">
+    </div>
+ 
+<p>Нажмите:<button>СОХРАНИТЬ</button></p>
+</form>
+
+</body>
+</html>
